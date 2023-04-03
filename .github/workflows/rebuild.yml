@@ -1,0 +1,36 @@
+# Script taken from https://github.com/Bouni/bouni-kicad-repository
+# All credit belongs to them
+
+name: Rebuild repository
+on: 
+  workflow_dispatch:
+     inputs:
+      VERSION:
+        description: 'Version of the new release'
+        required: true
+      DOWNLOAD_SHA256:
+        description: 'SHA256 sum of the zip file'
+        required: true
+      DOWNLOAD_SIZE:
+        description: 'Size of the zip file'
+        required: true
+      DOWNLOAD_URL:
+        description: 'URL of the zip file'
+        required: true
+      INSTALL_SIZE:
+        description: 'Size of the extracted zip file'
+        required: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Regenerate json files
+        run: python generate.py ${{ github.event.inputs.VERSION }} ${{ github.event.inputs.DOWNLOAD_SHA256 }} ${{ github.event.inputs.DOWNLOAD_SIZE }} ${{ github.event.inputs.DOWNLOAD_URL }} ${{ github.event.inputs.INSTALL_SIZE }}
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: GitHub Actions
+          author_email: actions@github.com
+          message: 'Update Addon repository after new release'
+          add: '*.json'

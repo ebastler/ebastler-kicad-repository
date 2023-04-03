@@ -1,0 +1,16 @@
+{
+    "$schema": "https://gitlab.com/kicad/code/kicad/-/raw/master/kicad/pcm/schemas/pcm.v1.schema.json#/definitions/Repository",
+    "maintainer": {
+        "name": "ebastler",
+        "contact": {
+            "discord": "https://discord.gg/UEhmQbQw"
+        }
+    },
+    "name": "ebastler KiCad repository",
+    "packages": {
+        "sha256": "cb8e138607c5cfadd6747c90fcbbfc5e83ca582357eaeb014e5ac2ce28713903",
+        "update_time_utc": "2023-04-03 21:07:24",
+        "update_timestamp": 1680556044,
+        "url": "https://github.com/ebastler/ebastler-kicad-repository/raw/main/packages.json"
+    }
+}
