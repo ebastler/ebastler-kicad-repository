@@ -8,9 +8,9 @@
     },
     "name": "ebastler KiCad repository",
     "packages": {
-        "sha256": "cb8e138607c5cfadd6747c90fcbbfc5e83ca582357eaeb014e5ac2ce28713903",
-        "update_time_utc": "2023-04-03 21:07:24",
-        "update_timestamp": 1680556044,
+        "sha256": "f486943abc2789439a33a4fbf81285ab83a55f131c5b5020c1000c5ecbfe8c8e",
+        "update_time_utc": "2023-04-03 22:50:13",
+        "update_timestamp": 1680562213,
         "url": "https://github.com/ebastler/ebastler-kicad-repository/raw/main/packages.json"
     }
 }

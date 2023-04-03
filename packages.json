@@ -22,6 +22,15 @@
                 "homepage": "https://github.com/ebastler/marbastlib"
             },
             "versions": [
+                {
+                    "version": "04.04.2023",
+                    "status": "testing",
+                    "kicad_version": "7.0",
+                    "download_sha256": "5368a7265d9e0b8e1331c6c6bbb039ea1743bc0a072d728e72a319ab0392e09b",
+                    "download_size": 2242581,
+                    "download_url": "https://github.com/ebastler/marbastlib/releases/download/04.04.2023/KiCAD-PCM-04.04.2023.zip",
+                    "install_size": 12020042
+                }
             ]
         }
     ]
