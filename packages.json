@@ -22,42 +22,6 @@
                 "homepage": "https://github.com/ebastler/marbastlib"
             },
             "versions": [
-                {
-                    "version": "2023.04.04",
-                    "status": "testing",
-                    "kicad_version": "7.0",
-                    "download_sha256": "5368a7265d9e0b8e1331c6c6bbb039ea1743bc0a072d728e72a319ab0392e09b",
-                    "download_size": 2242581,
-                    "download_url": "https://github.com/ebastler/marbastlib/releases/download/2023.04.04/KiCAD-PCM-04.04.2023.zip",
-                    "install_size": 12020042
-                },
-                {
-                    "version": "2023.04.19",
-                    "status": "testing",
-                    "kicad_version": "7.0",
-                    "download_sha256": "8e7433acecb59df12437976dda883db8eeb4653e5121d7a12e410ee52712ddc0",
-                    "download_size": 2449167,
-                    "download_url": "https://github.com/ebastler/marbastlib/releases/download/2023.04.19/KiCAD-PCM-19.04.2023.zip",
-                    "install_size": 12866262
-                },
-                {
-                    "version": "2023.04.21",
-                    "status": "testing",
-                    "kicad_version": "7.0",
-                    "download_sha256": "6a7447ed0b1b7c9233a2cab53cd70d3e793e4b10b6125d9e84b183ef2ec2be40",
-                    "download_size": 2449156,
-                    "download_url": "https://github.com/ebastler/marbastlib/releases/download/2023.04.21/KiCAD-PCM-21.04.2023.zip",
-                    "install_size": 12866122
-                },
-                {
-                    "version": "2023.05.17",
-                    "status": "testing",
-                    "kicad_version": "7.0",
-                    "download_sha256": "f9992e1e6ffccaf833278be6f9f837aa8b444cf0a80ebd0231e973ebd046fb2f",
-                    "download_size": 2687191,
-                    "download_url": "https://github.com/ebastler/marbastlib/releases/download/2023.05.17/KiCAD-PCM-2023.05.17.zip",
-                    "install_size": 14322877
-                }
             ]
         }
     ]
