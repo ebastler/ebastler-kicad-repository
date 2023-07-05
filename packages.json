@@ -39,6 +39,15 @@
                     "download_size": 3083996,
                     "download_url": "https://github.com/ebastler/marbastlib/releases/download/2023.05.31/KiCAD-PCM-2023.05.31.zip",
                     "install_size": 16642285
+                },
+                {
+                    "version": "2023.07.06",
+                    "status": "testing",
+                    "kicad_version": "7.0",
+                    "download_sha256": "40786ac04c53b80cd665209e419ed72cd40c8b1843148c4317ea3de544d41739",
+                    "download_size": 3085431,
+                    "download_url": "https://github.com/ebastler/marbastlib/releases/download/2023.07.06/KiCAD-PCM-2023.07.06.zip",
+                    "install_size": 16648795
                 }
             ]
         }
