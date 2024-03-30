@@ -20,13 +20,16 @@ on:
       INSTALL_SIZE:
         description: 'Size of the extracted zip file'
         required: true
+      KICAD_VERSION:
+        description: 'KiCAD version the package is made for'
+        required: true
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - name: Regenerate json files
-        run: python generate.py ${{ github.event.inputs.VERSION }} ${{ github.event.inputs.DOWNLOAD_SHA256 }} ${{ github.event.inputs.DOWNLOAD_SIZE }} ${{ github.event.inputs.DOWNLOAD_URL }} ${{ github.event.inputs.INSTALL_SIZE }}
+        run: python generate.py ${{ github.event.inputs.VERSION }} ${{ github.event.inputs.DOWNLOAD_SHA256 }} ${{ github.event.inputs.DOWNLOAD_SIZE }} ${{ github.event.inputs.DOWNLOAD_URL }} ${{ github.event.inputs.INSTALL_SIZE }} ${{ github.event.inputs.KICAD_VERSION }}
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
         with:

@@ -9,13 +9,14 @@ DOWNLOAD_SHA256=sys.argv[2]
 DOWNLOAD_SIZE=sys.argv[3]
 DOWNLOAD_URL=sys.argv[4]
 INSTALL_SIZE=sys.argv[5]
+KICAD_VERSION=sys.argv[6]
 
 with open("packages.json", "r+") as f:
     data = json.load(f)
     info = {
           "version": VERSION,
           "status": "testing",
-          "kicad_version": "7.0",
+          "kicad_version": KICAD_VERSION,
           "download_sha256": DOWNLOAD_SHA256,
           "download_size": int(DOWNLOAD_SIZE),
           "download_url": DOWNLOAD_URL, 
