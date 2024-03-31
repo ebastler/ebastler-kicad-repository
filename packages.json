@@ -9,13 +9,13 @@
             "type": "library",
             "author": {
                 "name": "ebastler and MarvFPV",
-                "contact": {
-                    "discord": "https://discord.gg/UEhmQbQw"
-                }
+                "contact": {}
             },
             "maintainer": {
                 "name": "ebastler and MarvFPV",
-                "contact": {}
+                "contact": {
+                    "discord": "https://discord.gg/UEhmQbQw"
+                }
             },
             "license": "CERN-OHL",
             "resources": {
@@ -222,13 +222,13 @@
             "type": "plugin",
             "author": {
                 "name": "elpekenin",
-                "contact": {
-                    "discord": "https://discord.gg/UEhmQbQw"
-                }
+                "contact": {}
             },
             "maintainer": {
                 "name": "elpekenin and ebastler",
-                "contact": {}
+                "contact": {
+                    "discord": "https://discord.gg/UEhmQbQw"
+                }
             },
             "license": "MIT",
             "resources": {
