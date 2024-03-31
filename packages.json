@@ -248,7 +248,7 @@
                     "version": "2024.04.01",
                     "status": "testing",
                     "kicad_version": "8.0",
-                    "download_sha256": "b180f868cd8e1b87939e43ebf79c6738668aaf122187ce4efc6aa34823f47682",
+                    "download_sha256": "f916dfe48690993c0b1cdf1d29d8de15004ceba09dcf97a6a17f805902a17017",
                     "download_size": 6346,
                     "download_url": "https://github.com/ebastler/connect-traces/releases/download/2024.04.01/KiCAD-PCM-2024.04.01.zip",
                     "install_size": 10050
