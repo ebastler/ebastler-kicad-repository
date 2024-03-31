@@ -234,7 +234,17 @@
             "resources": {
                 "homepage": "https://github.com/ebastler/connect-traces"
             },
-            "versions": []
+            "versions": [
+                {
+                    "version": "2023.03.31",
+                    "status": "testing",
+                    "kicad_version": "8.0",
+                    "download_sha256": "25b5cb404db0d6b60f5ebba13dc26b9619edc090d3fa95fc933032f2ef36eea3",
+                    "download_size": 5898,
+                    "download_url": "https://github.com/ebastler/connect-traces/releases/download/2023.03.31/KiCAD-PCM-2023.03.31.zip",
+                    "install_size": 8004
+                }
+            ]
         }
     ]
 }
