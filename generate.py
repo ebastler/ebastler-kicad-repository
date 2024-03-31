@@ -10,6 +10,15 @@ DOWNLOAD_SIZE=sys.argv[3]
 DOWNLOAD_URL=sys.argv[4]
 INSTALL_SIZE=sys.argv[5]
 KICAD_VERSION=sys.argv[6]
+PROJECT_NAME=sys.argv[7]
+
+# Check which project the incoming changes belong to, break invoking an error if no valid project
+if PROJECT_NAME == "marbastlib":
+    project_index = 0
+elif PROJECT_NAME == "connect-traces":
+    project_index = 1
+else:
+    sys.exit(1)
 
 with open("packages.json", "r+") as f:
     data = json.load(f)
@@ -23,14 +32,14 @@ with open("packages.json", "r+") as f:
           "install_size": int(INSTALL_SIZE)
     }
     index = None
-    for i, version in enumerate(data["packages"][0]["versions"]):
+    for i, version in enumerate(data["packages"][project_index]["versions"]):
         if version["version"] == VERSION:
             index = i
             break
     if index is not None:
-        data["packages"][0]["versions"][index] = info
+        data["packages"][project_index]["versions"][index] = info
     else:
-        data["packages"][0]["versions"].append(info)
+        data["packages"][project_index]["versions"].append(info)
     f.seek(0)
     json.dump(data, f, indent=4)
     f.truncate()

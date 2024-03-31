@@ -23,13 +23,16 @@ on:
       KICAD_VERSION:
         description: 'KiCAD version the package is made for'
         required: true
+      PROJECT_NAME:
+        description: 'Which project the build is a part of'
+        required: true
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - name: Regenerate json files
-        run: python generate.py ${{ github.event.inputs.VERSION }} ${{ github.event.inputs.DOWNLOAD_SHA256 }} ${{ github.event.inputs.DOWNLOAD_SIZE }} ${{ github.event.inputs.DOWNLOAD_URL }} ${{ github.event.inputs.INSTALL_SIZE }} ${{ github.event.inputs.KICAD_VERSION }}
+        run: python generate.py ${{ github.event.inputs.VERSION }} ${{ github.event.inputs.DOWNLOAD_SHA256 }} ${{ github.event.inputs.DOWNLOAD_SIZE }} ${{ github.event.inputs.DOWNLOAD_URL }} ${{ github.event.inputs.INSTALL_SIZE }} ${{ github.event.inputs.KICAD_VERSION, ${{ github.event.inputs.PROJECT_NAME }}
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
         with:
