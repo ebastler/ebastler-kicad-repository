@@ -243,6 +243,15 @@
                     "download_size": 5898,
                     "download_url": "https://github.com/ebastler/connect-traces/releases/download/2023.03.31/KiCAD-PCM-2023.03.31.zip",
                     "install_size": 8004
+                },
+                {
+                    "version": "2024.03.31",
+                    "status": "testing",
+                    "kicad_version": "8.0",
+                    "download_sha256": "8bae70e0ad9f5d3b93d88139eae8592847149fbc9011f25bfe383d0c9f29f486",
+                    "download_size": 5896,
+                    "download_url": "https://github.com/ebastler/connect-traces/releases/download/2024.03.31/KiCAD-PCM-2024.03.31.zip",
+                    "install_size": 7919
                 }
             ]
         }
